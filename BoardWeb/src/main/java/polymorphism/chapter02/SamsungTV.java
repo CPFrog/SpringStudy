@@ -16,4 +16,10 @@ public class SamsungTV implements TV{
 	public void volumeDown() {
 		System.out.println("삼성 TV의 볼륨을 내립니다.");
 	}
+	public void initMethod() { // 객체 생성시 수행할 초기화 메소드
+		System.out.println("삼성 TV 객체의 초기설정을 수행합니다.");
+	}
+	public void destroyMethod() { // 객체 제거시 수행할 메소드
+		System.out.println("삼성 TV 객체의 제거 프로세스를 수행합니다.");
+	}
 }
