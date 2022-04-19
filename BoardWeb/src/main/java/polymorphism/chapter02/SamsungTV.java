@@ -1,6 +1,9 @@
 package polymorphism.chapter02;
 
 public class SamsungTV implements TV{
+	public SamsungTV() {
+		System.out.println("--> 삼성TV 객체 생성됨.");
+	}
 	public void powerOn() {
 		System.out.println("삼성 TV의 전원을 켭니다.");
 	}
