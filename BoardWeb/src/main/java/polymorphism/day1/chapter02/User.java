@@ -1,4 +1,4 @@
-package polymorphism.chapter02;
+package polymorphism.day1.chapter02;
 
 import org.springframework.context.support.*;
 

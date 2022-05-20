@@ -1,6 +1,6 @@
-package polymorphism.chapter02;
+package polymorphism.day1.chapter02;
 
-import polymorphism.chapter03.*;
+import polymorphism.day1.chapter03.*;
 
 public class SamsungTV implements TV {
 	private Speaker speaker; // 외장스피커에서 소리 관련 설정 수행하기 위해 멤버변수로 외장 스피커 객체 가짐.
@@ -11,14 +11,24 @@ public class SamsungTV implements TV {
 	}
 
 	public SamsungTV(Speaker speaker) {
-		this.speaker = speaker;
+		setSpeaker(speaker); // setter 함수 추가되었으므로 지정 방식 변경
 		System.out.println("--> 삼성 TV + 외장스피커 객체가 생성되었습니다.");
 	}
 
 	public SamsungTV(Speaker speaker, int price) {
-		this.speaker = speaker;
-		this.price = price;
+		setSpeaker(speaker);
+		setPrice(price);
 		System.out.println("--> 가격이 명시된 삼성 TV + 필립스 외장스피커 객체가 생성되었습니다.");
+	}
+	
+	public void setSpeaker(Speaker speaker) {
+		System.out.println("-> setSpeaker() 호출");
+		this.speaker=speaker;
+	}
+	
+	public void setPrice(int price) {
+		System.out.println("-> setPrice() 호출");
+		this.price=price;
 	}
 
 	public void powerOn() {

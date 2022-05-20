@@ -1,4 +1,4 @@
-package polymorphism.chapter03;
+package polymorphism.day1.chapter03;
 
 public class HarmanKadonSpeaker implements Speaker{
 	public HarmanKadonSpeaker() {
